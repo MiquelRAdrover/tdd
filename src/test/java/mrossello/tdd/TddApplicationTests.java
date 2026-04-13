@@ -40,7 +40,8 @@ class TddApplicationTests {
 	@Test
 	void ingresarNegativo() {
 		Cuenta cuenta = new Cuenta();
-		cuenta.ingresar(-10);
+		double ingreso = -10;
+		cuenta.ingresar(ingreso);
 		Assertions.assertEquals(0, cuenta.saldo);
 	}
 
