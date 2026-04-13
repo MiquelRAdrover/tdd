@@ -14,7 +14,7 @@ public class Cuenta {
 	}
 
 	public void retirar(double retirar) {
-
+		this.saldo -= 1000;
 	}
 
 	public double getSaldo() {
