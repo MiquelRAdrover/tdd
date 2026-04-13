@@ -61,7 +61,8 @@ class TddApplicationTests {
 		Cuenta cuenta2 = new Cuenta();
 		cuenta.ingresar(300);
 		cuenta2.ingresar(400);
-		int idCuentaReceptora = cuenta2.getIdCuenta();
-		cuenta.transferencia(10, idCuentaReceptora);
+		cuenta.transferencia(10, cuenta2);
+		Assertions.assertEquals(290, cuenta.saldo);
+		Assertions.assertEquals(410, cuenta2.saldo);
 	}
 }

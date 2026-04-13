@@ -1,12 +1,9 @@
 package mrossello.tdd;
 
 public class Cuenta {
-	private static int contadorId = 0;
-	int idCuenta;
 	double saldo;
 
 	public Cuenta() {
-		this.idCuenta = contadorId++;
 		this.saldo = 0;
 	}
 
@@ -23,16 +20,13 @@ public class Cuenta {
 		}
 	}
 
-	public void transferencia(double dineroTransferencia, int idCuentaReceptora) {
-
+	public void transferencia(double dineroTransferencia, Cuenta cuentaReceptora) {
+		retirar(dineroTransferencia);
+		cuentaReceptora.ingresar(dineroTransferencia);
 	}
 
 	public double getSaldo() {
 		return saldo;
-	}
-
-	public int getIdCuenta() {
-		return idCuenta;
 	}
 
 }
