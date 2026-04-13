@@ -7,8 +7,8 @@ public class Cuenta {
 		this.saldo = 0;
 	}
 
-	public void ingresar() {
-		this.saldo += 10;
+	public void ingresar(double ingreso) {
+		this.saldo += ingreso;
 	}
 
 	public double getSaldo() {
