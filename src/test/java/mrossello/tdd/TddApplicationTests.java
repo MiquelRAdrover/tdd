@@ -55,4 +55,13 @@ class TddApplicationTests {
 		Assertions.assertEquals(0, cuenta.saldo);
 	}
 
+	@Test
+	void tranferenciaDe10DesdeUnaCuentaCon300AUnaCon400() {
+		Cuenta cuenta = new Cuenta();
+		Cuenta cuenta2 = new Cuenta();
+		cuenta.ingresar(300);
+		cuenta2.ingresar(400);
+		int idCuentaReceptora = cuenta2.getIdCuenta();
+		cuenta.transferencia(10, idCuentaReceptora);
+	}
 }
