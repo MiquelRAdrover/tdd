@@ -8,13 +8,15 @@ public class Cuenta {
 	}
 
 	public void ingresar(double ingreso) {
-		if (ingreso > 0) {
+		if (ingreso > 0 || ingreso > 3000) {
 			this.saldo += ingreso;
 		}
 	}
 
-	public void retirar(double retirar) {
-		this.saldo -= 1000;
+	public void retirar(double retirada) {
+		if (retirada > 0 || retirada < 3000 && retirada <= saldo) {
+			this.saldo -= retirada;
+		}
 	}
 
 	public double getSaldo() {

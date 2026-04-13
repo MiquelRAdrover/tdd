@@ -49,8 +49,9 @@ class TddApplicationTests {
 	void retiradaDinero() {
 		Cuenta cuenta = new Cuenta();
 		double ingreso = 1000;
+		double retirada = 1000;
 		cuenta.ingresar(ingreso);
-		cuenta.retirar(1000);
+		cuenta.retirar(retirada);
 		Assertions.assertEquals(0, cuenta.saldo);
 	}
 
