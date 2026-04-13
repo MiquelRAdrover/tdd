@@ -10,7 +10,7 @@ class TddApplicationTests {
 	@Test
 	void creacionCuenta() {
 		Cuenta cuenta = new Cuenta();
-		Assertions.assertEquals(2, cuenta.saldo);
+		Assertions.assertEquals(0, cuenta.saldo);
 	}
 
 
