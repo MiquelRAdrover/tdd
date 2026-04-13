@@ -31,7 +31,7 @@ class TddApplicationTests {
 	void ingresarEnCuentaConDinero() {
 		Cuenta cuenta = new Cuenta();
 		cuenta.ingresar(100);
-		cuenta.ingresar(2400);
+		cuenta.ingresar(2500);
 		Assertions.assertEquals(2600, cuenta.saldo);
 	}
 
