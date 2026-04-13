@@ -13,5 +13,12 @@ class TddApplicationTests {
 		Assertions.assertEquals(0, cuenta.saldo);
 	}
 
+	@Test
+	void ingreser10EnCuenta() {
+		Cuenta cuenta = new Cuenta();
+		cuenta.ingresar();
+		Assertions.assertEquals(0, cuenta.saldo);
+	}
+
 
 }
