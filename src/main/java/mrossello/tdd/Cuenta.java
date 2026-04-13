@@ -13,7 +13,12 @@ public class Cuenta {
 		}
 	}
 
+	public void retirar(double retirar) {
+
+	}
+
 	public double getSaldo() {
 		return saldo;
 	}
+
 }
